@@ -25,4 +25,4 @@ jobs:
     - name: Install Surge
       run: npm install -g surge
     - name: Deploying website
-      run: surge ./public ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }} 
+      run: surge public ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }} 
